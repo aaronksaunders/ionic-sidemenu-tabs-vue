@@ -18,9 +18,6 @@
                 class="hydrated"
                 :class="{ selected: selectedIndex === i }"
               >
-                <ion-icon
-                  slot="start"
-                ></ion-icon>
                 <ion-label>{{ p.title }}</ion-label>
               </ion-item>
             </ion-menu-toggle>
@@ -69,7 +66,6 @@ export default defineComponent({
   components: {
     IonApp,
     IonContent,
-    IonIcon,
     IonItem,
     IonLabel,
     IonList,
