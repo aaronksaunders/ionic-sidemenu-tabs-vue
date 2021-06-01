@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "sidemenu-tabs",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

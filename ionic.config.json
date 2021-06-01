@@ -1,0 +1,7 @@
+{
+  "name": "sidemenu-tabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
