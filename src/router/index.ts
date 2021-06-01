@@ -4,11 +4,30 @@ import { RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '',
-    redirect: '/folder/Inbox'
+    redirect: '/tabs'
   },
   {
-    path: '/folder/:id',
-    component: () => import ('../views/Folder.vue')
+    path: '/tabs',
+    component: () => import ('../views/tabs/TabRoot.vue'),
+    children : [
+      {
+        path: '',
+        redirect: '/tabs/speakers'
+      },
+      {
+        path: '/tabs/speakers',
+        component: () => import ('../views/tabs/Speakers.vue')
+      },
+      {
+        path: '/tabs/schedule',
+        component: () => import ('../views/tabs/Schedule.vue')
+      },
+    ]
+  },
+
+  {
+    path: '/other',
+    component: () => import ('../views/Other.vue')
   }
 ]
 
