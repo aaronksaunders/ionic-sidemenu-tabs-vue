@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Folder from '@/views/Folder.vue'
+import Folder from '@/views/Other.vue'
 
 describe('Folder.vue', () => {
   it('renders folder view', () => {
