@@ -36,12 +36,31 @@ import {
   IonPage,
   IonTabBar,
   IonTabButton,
-  IonTabs
+  IonTabs,
+  IonButtons,
+  IonMenuButton,
+  IonHeader,
+  IonBadge,
+  IonTitle,
+  IonToolbar
 } from "@ionic/vue";
 import { calendar, personCircle } from "ionicons/icons";
 
 export default defineComponent({
-  components: { IonIcon, IonLabel, IonPage, IonTabBar, IonTabButton, IonTabs },
+  components: {
+    IonIcon,
+    IonLabel,
+    IonPage,
+    IonTabBar,
+    IonTabButton,
+    IonButtons,
+    IonTabs,
+    IonMenuButton,
+    IonHeader,
+    IonBadge,
+    IonTitle,
+    IonToolbar
+  },
   setup() {
     const beforeTabChange = () => {
       // do something before tab change
